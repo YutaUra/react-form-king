@@ -1,0 +1,26 @@
+{
+  "name": "react-form-king",
+  "version": "0.0.1",
+  "repository": "https://github.com/YutaUra/react-form-king.git",
+  "author": "YutaUra <yuuta3594@outlook.jp>",
+  "license": "MIT",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "run-p build:*",
+    "build:esm": "esbuild --format=esm src/index.ts --outdir=dist/esm",
+    "build:cjs": "esbuild --format=cjs src/index.ts --outdir=dist/cjs",
+    "build:type": "tsc"
+  },
+  "devDependencies": {
+    "esbuild": "^0.13.12",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^4.4.4"
+  }
+}
