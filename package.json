@@ -1,0 +1,26 @@
+{
+  "name": "react-form-king",
+  "repository": "https://github.com/YutaUra/react-form-king.git",
+  "author": "YutaUra <yuuta3594@outlook.jp>",
+  "license": "MIT",
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "config": {
+    "commitizen": {
+      "path": "git-cz"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^14.1.0",
+    "@commitlint/config-conventional": "^14.1.0",
+    "commitizen": "^4.2.4",
+    "git-cz": "^4.8.0",
+    "husky": "^7.0.4"
+  }
+}
